@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+a {
+  color: white;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 80rem;
+  background: url("./images/bg-desktop.svg") no-repeat;
+  background-size: cover;
+  background-color: var(--violet);
+  color: white;
+  height: 100vh;
+}
+
+header {
+  padding: 4rem 0;
+}
+
+header img,
+main img {
+  width: 100%;
+}
+
+.wrapper-logo {
+  width: 12rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 65vh;
+  column-gap: 4rem;
+  margin-top: 3rem;
+}
+
+.main-content {
+  padding-top: 1rem;
+  max-width: 33rem;
+}
+
+button {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  padding: 0.6rem 4rem;
+  border-radius: 2rem;
+  color: var(--violet);
+  font-size: 1.2rem;
+  box-shadow: 3px 3px 9px 0px #0000007a;
+}
+
+.socials {
+  margin: 1rem 0;
+  text-align: right;
+}
+
+ion-icon {
+  border: 1px solid white;
+  font-size: 1.4rem;
+  margin: 0 0.3rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+ion-icon:hover {
+  color: var(--soft-magenta);
+  border: 1px solid var(--soft-magenta);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--soft-magenta);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0 2rem;
+    background: url("./images/bg-mobile.svg") no-repeat;
+    background-size: contain;
+    background-color: var(--violet);
+  }
+
+  main {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  header {
+    padding: 2rem 0;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .wrapper-logo {
+    width: 10rem;
+  }
+
+  button {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .socials {
+    margin: 4rem 0;
+    text-align: center;
+  }
+}
